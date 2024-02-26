@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,700&family=Yeseva+One&display=swap');
+
+* { 
+    margin: 0;
+    padding: 0;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 200;
+}
+
+.page {
+    width: 100%;
+    min-height: 100vh;
+    background-image:  url("img/background.jpg");
+    background-size: cover;
+}
+
+.header {
+    width: calc(100% - 20px);
+    padding: 0px 10px;
+    height: 10vh;
+    background-color: #414040;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.header .logo {
+    color: #fff;
+    font-size: 20px;
+}
+
+.header .nav {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .nav .menu {
+    color: #fff;
+}
+
+.side-nav, .side-nav-btn {
+    display: none;
+}
+
+.header .nav .menu:hover {
+    color: rgb(251, 208, 216);
+}
+
+.main {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .content {
+    width: 57%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main .content .text {
+    width: 55%;
+    color: #333;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: #fff;
+    margin-left: 40px;
+}
+
+.main .content .text p {
+    font-size: 30px;
+}
+
+.main .content .text h1 {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.main .content img {
+    width: 300px;
+}
+
+.footer {
+    min-height: 10vh;
+}
+
+
+@media screen and (max-width: 1100px) {
+    .side-nav-btn {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .header .nav {
+        justify-content: flex-end;
+    }
+
+    .side-nav {
+        display: block;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+      
+    .side-nav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+      
+    .side-nav a:hover {
+        color: #f1f1f1;
+    }
+      
+    .side-nav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    .main .content .text p {
+        font-size: 25px;
+    }
+    
+    .main .content .text h1 {
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    .main .content img {
+        width: 250px;
+    }
+    
+}
+
+@media screen and (max-width: 950px) {
+    .main .content {
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        margin: 50px;
+    }
+    
+    .main .content .text {
+        width: 400px;
+        margin-top: 50px;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .main .content .text {
+        width: 300px;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .main .content .text p {
+        font-size: 20px;
+    }
+
+    .main .content .text h1 {
+        font-size: 40px;
+    }
+
+    .main .content .text {
+        width: 250px;
+    }
+}
+
+
