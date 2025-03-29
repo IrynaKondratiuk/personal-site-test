@@ -62,7 +62,7 @@ a {
 }
 
 .main .content {
-    width: 57%;
+    width: 50%;
     height: auto;
     display: flex;
     align-items: center;
@@ -89,6 +89,7 @@ a {
 
 .main .content img {
     width: 300px;
+    border-radius: 10%;
 }
 
 .footer {
@@ -127,6 +128,8 @@ a {
         padding: 8px 8px 8px 32px;
         text-decoration: none;
         font-size: 20px;
+        width: max-content;
+
         color: #818181;
         display: block;
         transition: 0.3s;
@@ -195,6 +198,11 @@ a {
     .main .content .text {
         width: 250px;
     }
+}
+
+@media screen and (max-height: 450px) {
+    .side-nav {padding-top: 15px;}
+    .side-nav a {font-size: 18px;}
 }
 
 

@@ -144,6 +144,8 @@ a {
         font-size: 20px;
         color: #818181;
         display: block;
+        width: max-content;
+
         transition: 0.3s;
     }
       
@@ -175,4 +177,9 @@ a {
         margin-top: 30px;
         width: 50%;
     }
+}
+
+@media screen and (max-height: 450px) {
+    .side-nav {padding-top: 15px;}
+    .side-nav a {font-size: 18px;}
 }

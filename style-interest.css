@@ -50,7 +50,7 @@ a {
 
 .main {
     width: 100%;
-    background-image:  url("img/background6.jpg");
+    background-image:  url("img/bgpt.png");
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -59,7 +59,7 @@ a {
 }
 
 .main .title {
-    color: #fff;
+    color: #000000;
     margin: calc(10vh + 50px) 0;
     font-size: 50px;
     font-weight: bold;
@@ -144,6 +144,8 @@ a {
         text-decoration: none;
         font-size: 20px;
         color: #818181;
+        width: max-content;
+
         display: block;
         transition: 0.3s;
     }
@@ -189,5 +191,10 @@ a {
         font-size: 40px;
     }
 } 
+
+@media screen and (max-height: 450px) {
+    .side-nav {padding-top: 15px;}
+    .side-nav a {font-size: 18px;}
+}
 
 
